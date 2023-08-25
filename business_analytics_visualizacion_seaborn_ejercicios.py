@@ -34,8 +34,6 @@ plt.show()
 
 # Sobre el gráfico anterior: haz la línea de tamaño 5 que sea de rayas - puntos y que sea roja
 
-# Gráfico de líneas usando seaborn
-
 plt.figure(figsize=(12, 6))
 sns.lineplot(data=df.total_bill, color='red', label='Total Bill', linewidth=5, linestyle='-.')
 plt.title("Total Bill Over Observations")
@@ -52,8 +50,6 @@ plt.show()
 # - haz que el color varíe según el sexo
 
 # NOTA: el gráfico no será legible, pero el ejercicio pretende destacar la diferencia en los parámetros a usar si queremos definir directamente los mismos o si queremos asociarlos a otras variables.
-
-# Creando el gráfico con las modificaciones solicitadas usando Seaborn
 
 plt.figure(figsize=(12, 6))
 
@@ -201,7 +197,6 @@ plt.show()
 
 # Crea un boxplot para analizar las diferencias entre el tamaño de las facturas por día de la semana.
 
-# Creando un boxplot para analizar las diferencias en el tamaño de las facturas por día de la semana
 plt.figure(figsize=(10, 6))
 sns.boxplot(data=df, x='day', y='total_bill', palette="coolwarm")
 plt.title("Boxplot of Total Bill by Day of the Week")
